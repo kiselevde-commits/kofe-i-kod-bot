@@ -1,0 +1,12 @@
+version: "1"
+languages:
+  python:
+    type: python
+    version: "3.12"
+    requirements: requirements.txt
+    entrypoint:
+      cmd: python -u bot.py
+    environment:
+      pythonunbuffered: "1"
+    mounts:
+      data: true
