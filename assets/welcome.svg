@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1c0d0b"/>
+      <stop offset=".48" stop-color="#442019"/>
+      <stop offset="1" stop-color="#160b0a"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#a95730" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#3a160f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chocolate" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#f5d4a1"/>
+      <stop offset=".18" stop-color="#bd7a45"/>
+      <stop offset=".42" stop-color="#71371f"/>
+      <stop offset=".72" stop-color="#3c1b15"/>
+      <stop offset=".9" stop-color="#8a4a2c"/>
+      <stop offset="1" stop-color="#2b130f"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2=".15" y2="1">
+      <stop stop-color="#fff8e8"/>
+      <stop offset=".36" stop-color="#f6ddb0"/>
+      <stop offset=".75" stop-color="#dfb67e"/>
+      <stop offset="1" stop-color="#a96b45"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="1" y2=".85">
+      <stop stop-color="#fff5df"/>
+      <stop offset=".5" stop-color="#d9b88c"/>
+      <stop offset="1" stop-color="#8d573e"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="15"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".65"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <pattern id="grain" width="95" height="95" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="18" r="1" fill="#fff3d8" opacity=".12"/>
+      <circle cx="58" cy="62" r=".8" fill="#f1bd84" opacity=".1"/>
+      <circle cx="77" cy="21" r=".6" fill="#fff3d8" opacity=".1"/>
+      <circle cx="28" cy="80" r=".7" fill="#e9ac77" opacity=".12"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#back)"/>
+  <ellipse cx="586" cy="385" rx="550" ry="390" fill="url(#glow)"/>
+  <rect width="1200" height="800" fill="url(#grain)"/>
+  <rect x="34" y="34" width="1132" height="732" rx="25" fill="none" stroke="#d6a56b" stroke-opacity=".35" stroke-width="1.5"/>
+  <rect x="48" y="48" width="1104" height="704" rx="19" fill="none" stroke="#fff1d1" stroke-opacity=".08"/>
+
+  <g fill="#ffdd9c" opacity=".65">
+    <circle cx="130" cy="215" r="2"/><circle cx="1050" cy="177" r="2"/>
+    <circle cx="1015" cy="555" r="1.5"/><circle cx="184" cy="585" r="1.5"/>
+    <circle cx="295" cy="143" r="1.2"/><circle cx="917" cy="650" r="1.2"/>
+  </g>
+  <g fill="none" stroke="#d5a06b" stroke-opacity=".2">
+    <path d="M88 173c50-56 109-70 174-63M938 690c65-5 119-34 160-85"/>
+    <path d="M111 622c43 16 82 17 118 5M966 110c46 14 80 42 104 82"/>
+  </g>
+
+  <text x="600" y="175" text-anchor="middle" fill="#e9c99d" font-family="Georgia,serif" font-size="21" letter-spacing="7">КАФЕ • КОФЕ • ДЕСЕРТЫ</text>
+  <path d="M434 201h332" stroke="#d7aa74" stroke-opacity=".65"/>
+  <circle cx="418" cy="201" r="3" fill="#d7aa74"/><circle cx="782" cy="201" r="3" fill="#d7aa74"/>
+
+  <ellipse cx="600" cy="378" rx="458" ry="146" fill="#b55e37" opacity=".28" filter="url(#softGlow)"/>
+
+  <g filter="url(#shadow)" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="112" letter-spacing="-4">
+    <text x="600" y="380" fill="#2a100d" stroke="#f5dfbf" stroke-width="14" stroke-linejoin="round">ShoKKo&amp;Latte</text>
+    <text x="600" y="380" fill="url(#chocolate)" stroke="#6a351f" stroke-width="3" stroke-linejoin="round">ShoKKo&amp;Latte</text>
+    <text x="600" y="380" fill="none" stroke="#fff0d6" stroke-opacity=".45" stroke-width="1.4" stroke-linejoin="round">ShoKKo&amp;Latte</text>
+  </g>
+
+  <path d="M267 287
+    C302 274 331 281 354 294
+    C372 304 382 314 390 324
+    C398 335 400 356 394 373
+    C389 390 374 391 369 376
+    L365 352 C363 339 351 337 348 352
+    L344 370 C341 386 326 387 321 370
+    L315 346 C312 335 301 336 298 350
+    L294 363 C290 378 276 378 272 362
+    L267 340 C263 328 251 330 249 344
+    L247 355 C245 367 233 367 230 354
+    L225 332 C219 308 239 294 267 287Z"
+    fill="url(#cream)" stroke="#fff5e4" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M265 291c38-12 72-2 94 21" fill="none" stroke="#fff" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+  <path d="M264 300c24-8 45-4 61 4" fill="none" stroke="#fffaf0" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="600" y="450" text-anchor="middle" fill="#f3d6b0" font-family="Georgia,serif" font-size="26" font-style="italic" letter-spacing="2">Кофе, шоколад и немного волшебства</text>
+
+  <g transform="translate(0 8)">
+    <ellipse cx="600" cy="630" rx="285" ry="42" fill="#090605" opacity=".52" filter="url(#softGlow)"/>
+    <path d="M446 520h272l-26 123c-4 20-18 31-39 31h-142c-21 0-35-11-39-31z" fill="url(#cup)" stroke="#f7e7cf" stroke-width="3"/>
+    <path d="M718 541h25c42 0 43 65 0 65h-38" fill="none" stroke="#e5c29a" stroke-width="16"/>
+    <path d="M718 546h19c29 0 30 54 0 54h-34" fill="none" stroke="#fff2da" stroke-width="5" opacity=".65"/>
+    <ellipse cx="582" cy="521" rx="137" ry="25" fill="#3a1b14" stroke="#f8ead0" stroke-width="5"/>
+    <ellipse cx="582" cy="519" rx="120" ry="16" fill="#754126"/>
+    <path d="M582 532c-7-6-17-13-17-20 0-10 12-13 18-3 6-10 18-7 18 3 0 7-11 15-19 20z" fill="#f4e3c4"/>
+    <path d="M476 555c10 39 24 71 42 91" fill="none" stroke="#fff8e7" stroke-opacity=".62" stroke-width="8" stroke-linecap="round"/>
+    <path d="M519 660c37 10 92 10 129 0" fill="none" stroke="#9b6a4e" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  </g>
+
+  <g transform="translate(854 554) rotate(-16)">
+    <path d="M0 22 44 0l45 23-43 25z" fill="#74361f" stroke="#d29a62" stroke-width="2"/>
+    <path d="M44 0v47M0 22v44l46 25V48M89 23v44L46 91" fill="none" stroke="#e6b476" stroke-opacity=".8" stroke-width="2"/>
+    <path d="M9 29l28-14" stroke="#f1cb91" stroke-width="3" opacity=".6"/>
+  </g>
+  <g transform="translate(280 574) rotate(15)">
+    <ellipse cx="0" cy="0" rx="25" ry="14" fill="#542719" stroke="#b77a4a" stroke-width="2"/>
+    <path d="M-17-2c9-8 21-9 34-3-8 2-15 6-21 12" fill="none" stroke="#d89b67" stroke-width="2" opacity=".8"/>
+  </g>
+
+  <path d="M439 710h322" stroke="#d7aa74" stroke-opacity=".55"/>
+  <text x="600" y="744" text-anchor="middle" fill="#e4c39a" font-family="Georgia,serif" font-size="17" letter-spacing="5">СОЗДАНО С ЛЮБОВЬЮ</text>
+</svg>
